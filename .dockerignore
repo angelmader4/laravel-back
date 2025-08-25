@@ -1,0 +1,52 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Dependencies
+vendor
+node_modules
+npm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+bootstrap/cache/*
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+README.md
+*.md
+
+# Tests
+tests
+
+# Build artifacts
+public/build
+public/hot
+public/storage
+
+# Temporary files
+*.tmp
+*.temp
