@@ -5,8 +5,6 @@ RUN apk add --no-cache \
     nginx \
     supervisor \
     mysql-client \
-    postgresql-client \
-    postgresql-dev \
     git \
     curl \
     libpng-dev \
@@ -19,7 +17,6 @@ RUN apk add --no-cache \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install \
         pdo_mysql \
-        pdo_pgsql \
         mbstring \
         exif \
         pcntl \
@@ -28,7 +25,6 @@ RUN apk add --no-cache \
         xml \
         zip \
     && apk del --no-cache \
-        postgresql-dev \
         freetype-dev \
         libjpeg-turbo-dev \
         libpng-dev \
