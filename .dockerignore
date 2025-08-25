@@ -50,3 +50,6 @@ public/storage
 # Temporary files
 *.tmp
 *.temp
+
+# Keep docker config files
+!docker/
